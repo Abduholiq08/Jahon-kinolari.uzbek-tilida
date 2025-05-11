@@ -1,2 +1,3 @@
 # mykino
-Siz barcha turdagi kinolarni shu yerdan topishingiz mumkin
+
+Bu sayt orqali siz turli jahon kinolarini o‘zbek tilida ko‘rishingiz mumkin.
