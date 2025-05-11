@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    background-color: #111;
+    color: #fff;
+    font-family: sans-serif;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    padding: 1rem 2rem;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: red;
+  }
+  
+  nav a {
+    margin-left: 1rem;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  h1 {
+    text-align: center;
+    margin: 2rem 0 1rem;
+  }
+  
+  .movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+    padding: 0 2rem 2rem;
+  }
+  
+  .movie {
+    background-color: #222;
+    padding: 0.5rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.2s;
+  }
+  
+  .movie img {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+  
+  .movie p {
+    margin-top: 0.5rem;
+  }
+  
+  .movie:hover {
+    transform: scale(1.05);
+  }
+  .search-box {
+    position: relative;
+    margin-left: 2rem;
+  }
+  
+  .search-box input {
+    padding: 0.5rem 2rem 0.5rem 1rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .loader {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    border: 3px solid #fff;
+    border-top: 3px solid transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  @keyframes spin {
+    0% { transform: translateY(-50%) rotate(0deg); }
+    100% { transform: translateY(-50%) rotate(360deg); }
+  }
+  .tg-button {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.4rem 0.8rem;
+    background-color: #0088cc;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+  }
+  
+  .tg-button:hover {
+    background-color: #007ab8;
+  }
